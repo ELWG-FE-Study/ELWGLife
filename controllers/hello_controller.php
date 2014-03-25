@@ -6,7 +6,7 @@ class HelloController
     private $hello_model;
 
     function __construct() {
-        $this->hello_model = new HelloModel();//新建一个HelloModel类
+        $this->hello_model = new HelloModel();
     }
 
     function index() {
