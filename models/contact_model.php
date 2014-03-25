@@ -1,5 +1,6 @@
 <?php
-class contact_model {
+$sql;
+class Contact_model {
     function _construct() {
     }
     function get_contact_data（） {
