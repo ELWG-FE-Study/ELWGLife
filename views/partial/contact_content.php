@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="http://yui.yahooapi
-	s.com/pure/0.4.2/pure-min.css">
 <div class = "pure-g-r">
 
 <table class = "pure-table pure-table-bordered">
