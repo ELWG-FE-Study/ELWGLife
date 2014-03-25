@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/pure.css">
 <div class = "pure-g-r">
 <script type = "text/javascript">
 $(document).ready(function(){
