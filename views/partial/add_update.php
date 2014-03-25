@@ -9,7 +9,8 @@ $(document).ready(function(){
 
 <body>
 <button id = "show" type = "button">添加或修改</button>
-<table class = "pure-table pure-table-bordered" type = "hidden">
+<br>
+<table class = "pure-table pure-table-bordered" display = "none">
 <thead>
 	<tr>
 		<th>姓名</th>

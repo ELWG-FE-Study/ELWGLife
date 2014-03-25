@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="http://yui.yahooapi
+	s.com/pure/0.4.2/pure-min.css">
 <div class = "pure-g-r">
 
 <table class = "pure-table pure-table-bordered">
@@ -24,23 +26,31 @@
 </tbody>
 </table>
 
-<div class="search_form">
-<?php $search_text = "Search...";?>
-<form method = "get" id="searchform" action="<?=$data['name'];?>/">
-<input 
-type = "text" 
-value = "<?php echo $search_text;?>" 
-name="s"
-id = "s" 
-onblur = "if(this.value == ""){
-	this.value = '<?php echo $search_text;?>'
-}"
-onfocus = "if(this.value == '<?php echo $search_text;?>'){
-	this.value = "";
-}"/>
+<style>
+#search{font-size: 14px;}
+#search_remind{
+	border:1px solid #817FB2; 
+	position:absolute;
+	 display:none;}
+</style>
 
-</input>
-</form>
+<div id = "search">
+	<input type = "text" name = "k"/>
+	<input type = "button" name = "s" value = "搜索">
 </div>
+<div id = "search_remind"></div>
+<script src="http://ajax.googleapis.com/ajax/lib
+	s/jquery/1.8.0/jquery.min.js">
+	$(function(){
+		$('#search input[name = "k"].keyup(function(){
+			$.post('search_remind.php',{'value':$(this).val()},
+				fuction(data){
+					if(data=='0′) $(‘#search_auto').html(”).css(‘display','none');
+                    else $(‘#search_auto').html(data).css(‘display','block');
+					});
+			});
+	});
+</script>
+
 
 </div>

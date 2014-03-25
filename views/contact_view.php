@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<meta charset = "utf-8">
+
 <html>
 <head>
+	<meta charset = "utf-8">
+
 	<?php include('\partial\html_head.php');?>
 	<?php include('\partial\contact_header.php');?>
 	<?php include('\partial\contact_content.php');?>
