@@ -1,6 +1,6 @@
 <?php
 
-class Contact_model {
+class Contact_Model {
 
     function _construct() {
 
