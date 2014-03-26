@@ -15,11 +15,10 @@ class Contact_Model {
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
-<<<<<<< HEAD
+
         mysql_query("set names utf8;");
-=======
+
         mysql_query("set names utf8;"); 
->>>>>>> 9f00b5c1f416ff28f81bf3d458de4ef1fc09e25e
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();
