@@ -1,7 +1,9 @@
 <?php
 require('../models/contact_model.php');//引入contact_model文件
 
-class Contact_Controller//类名Contact_Controller
+//类名Contact_Controller
+
+class Contact_Controller     
 {
 	
 	function __construct()

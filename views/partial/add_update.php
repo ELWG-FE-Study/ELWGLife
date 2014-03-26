@@ -11,7 +11,7 @@ $(document).ready(function(){
 <body>
 <button id = "show" class = "pure-button">添加或修改</button>
 <br>
-<table class = "pure-table pure-table-bordered" display = "none">
+<table class = "pure-table pure-table-bordered hidden" >
 <thead>
 	<tr>
 		<th>姓名</th>

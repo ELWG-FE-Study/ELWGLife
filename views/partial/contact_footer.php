@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+=======
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../css/contact.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"/>
+
+>>>>>>> 6fd82cdd5550d15382033535597ff8eeafbf3783
 <div id="container">
 <div id="page" class="clearfix">
-
 </div>
 <div id="footer">
 <table>
@@ -21,6 +27,4 @@
 </table>
 </div>
 </div>
-
-
 
