@@ -1,9 +1,10 @@
-<style type = "text/css">
 html,body{
+	height: 100%;
 	margin:0;
 	padding:0;
 }
 #ContactContent{
+	position: relative;
     height:100%;
     margin-left: 15%;
     margin-right: 15%;
@@ -20,4 +21,3 @@ html,body{
 .hidden{
 	display: none;
 }
-</style>
