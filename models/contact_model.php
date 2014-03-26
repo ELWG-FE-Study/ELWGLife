@@ -3,16 +3,6 @@ class Contact_Model {
 
     function _construct() {
 
-        /*static $con;static $db_selected;
-        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
-        if (!$con) {
-            die('Could not connect: ' . mysql_error());
-        }
-        
-        $db_selected = mysql_select_db('db_elwg_life', $con);
-        if (!$db_selected) {
-            die('Could not connect: ' . mysql_error());
-        }*/
     }
 
     function get_contact_data() {
@@ -25,7 +15,11 @@ class Contact_Model {
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
+<<<<<<< HEAD
         mysql_query("set names utf8;");
+=======
+        mysql_query("set names utf8;"); 
+>>>>>>> 9f00b5c1f416ff28f81bf3d458de4ef1fc09e25e
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();
@@ -50,6 +44,7 @@ class Contact_Model {
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
+        mysql_query("set names utf8;"); 
         $backArray[] = array();
         $sql = "SELECT member_name FROM contacts WHERE member_name=$name";
         $search = mysql_query($sql);
@@ -75,6 +70,7 @@ class Contact_Model {
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
+        mysql_query("set names utf8;"); 
         $sql = "SELECT member_name FROM contacts WHERE member_name LIKE '%$key%' ";
         $search = mysql_query($sql);
         $backArray = array();
