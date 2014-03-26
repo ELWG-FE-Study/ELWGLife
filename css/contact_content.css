@@ -28,3 +28,7 @@ html,body{
 .hidden{
 	display: none;
 }
+
+.new-contact-container{
+	width: 100px;
+}

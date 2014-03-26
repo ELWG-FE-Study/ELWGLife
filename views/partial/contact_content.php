@@ -8,9 +8,9 @@
 		<th >姓名</th>
 		<th >性别</th>
 		<th >年级</th>
-		<th id="as">电话</th>
-		<th id="as">QQ</th>
-		<th id="as">常用邮箱</th>
+		<th >电话</th>
+		<th >QQ</th>
+		<th >常用邮箱</th>
 	</tr>
 
 	<?php foreach ($data as $row) { ?>

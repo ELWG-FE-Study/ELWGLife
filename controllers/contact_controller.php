@@ -1,5 +1,4 @@
 <?php
-var_dump($_SERVER['HTTP_HOST']);
 require('../models/contact_model.php');//引入contact_model文件
 
 //类名Contact_Controller
