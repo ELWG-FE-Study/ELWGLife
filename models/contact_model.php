@@ -16,7 +16,7 @@ class Contact_model {
         }
     }
 
-    function get_contact_data（） {
+    function get_contact_data() {
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();
