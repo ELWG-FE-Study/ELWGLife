@@ -3,6 +3,7 @@
 class Contact_model {
 
     function _construct() {
+
         static $con;
         $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
         if (!$con) {
