@@ -4,19 +4,28 @@ class Contact_Model {
 
     function _construct() {
 
-        static $con;
+        /*static $con;static $db_selected;
         $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
         if (!$con) {
             die('Could not connect: ' . mysql_error());
         }
-        static $db_selected;
+        
+        $db_selected = mysql_select_db('db_elwg_life', $con);
+        if (!$db_selected) {
+            die('Could not connect: ' . mysql_error());
+        }*/
+    }
+
+    function get_contact_data() {
+        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
+        if (!$con) {
+            die('Could not connect: ' . mysql_error());
+        }
+        
         $db_selected = mysql_select_db('db_elwg_life', $con);
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
-    }
-
-    function get_contact_data() {
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();
@@ -32,6 +41,15 @@ class Contact_Model {
     }
 
     function update_contact_data($name, $sex, $grade, $tel, $qq, $email) {
+        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
+        if (!$con) {
+            die('Could not connect: ' . mysql_error());
+        }
+        
+        $db_selected = mysql_select_db('db_elwg_life', $con);
+        if (!$db_selected) {
+            die('Could not connect: ' . mysql_error());
+        }
         $backArray[] = array();
         $sql = "SELECT member_name FROM contacts WHERE member_name=$name";
         $search = mysql_query($sql);
@@ -48,6 +66,15 @@ class Contact_Model {
     }
 
     function search_contact_data($key) {
+        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
+        if (!$con) {
+            die('Could not connect: ' . mysql_error());
+        }
+        
+        $db_selected = mysql_select_db('db_elwg_life', $con);
+        if (!$db_selected) {
+            die('Could not connect: ' . mysql_error());
+        }
         $sql = "SELECT member_name FROM contacts WHERE member_name LIKE '%$key%' ";
         $search = mysql_query($sql);
         $backArray = array();
