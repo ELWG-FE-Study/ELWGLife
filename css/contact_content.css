@@ -8,7 +8,9 @@ html,body{
     margin-left: 15%;
     margin-right: 15%;
     width:70%;
+    padding-top: 3px;
 }
+
 
 
 #search{font-size: 14px;}
@@ -16,6 +18,12 @@ html,body{
 	border:1px solid #817FB2; 
 	position:absolute;
 	 display:none;}
+
+#update{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+}
 
 .hidden{
 	display: none;

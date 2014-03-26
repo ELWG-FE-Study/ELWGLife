@@ -1,5 +1,4 @@
 <?php
-
 class Contact_Model {
 
     function _construct() {
@@ -26,6 +25,7 @@ class Contact_Model {
         if (!$db_selected) {
             die('Could not connect: ' . mysql_error());
         }
+        mysql_query("set names utf8;");
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();

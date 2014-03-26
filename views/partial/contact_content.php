@@ -1,39 +1,36 @@
-<div id = "ContactContent">
+
+
 <div>
 
-<table class = "pure-table pure-table-bordered">
-<thead>
-	<tr>
-		<th>姓名</th>
-		<th>性别</th>
-		<th>年级</th>
-		<th>电话</th>
-		<th>QQ</th>
-		<th>常用邮箱</th>
+<table class = "pure-table pure-table-bordered" id="ContactContent">
+<tbody>
+	<tr align="center">
+		<th >姓名</th>
+		<th >性别</th>
+		<th >年级</th>
+		<th id="as">电话</th>
+		<th id="as">QQ</th>
+		<th id="as">常用邮箱</th>
 	</tr>
-</thead>
 
-<tbody >
-	<?php var_dump($data);?>
 	<?php foreach ($data as $row) { ?>
-	<tr>
+	<tr align="center">
 		
-		<td><?= $row['name'] ?></td>
-		<td><?= $row['sex'] ?></td>
-		<td><?= $row['grade'] ?></td>
-		<td><?= $row['tel'] ?></td>
-		<td><?= $row['qq'] ?></td>
-		<td><?= $row['email'] ?></td>
-		
+		<td><?= $row["member_name"] ?></td>
+		<td><?= $row["sex"] ?></td>
+		<td><?= $row["grade"] ?></td>
+		<td><?= $row["phone"] ?></td>
+		<td><?= $row["qq"] ?></td>
+		<td><?= $row["email"] ?></td>		
 	</tr>
 	<?php }?>
-</tbody>
+	</tbody>
 </table>
 
-<div id = "search">
+<form class="pure-form" id="ContactContent">
 	<input type = "text" name = "k"/>
-	<input type = "button" name = "s" value = "搜索">
-</div>
+	<a class="pure-button pure-button-primary" href="javascript:void(0);">搜索</a>
+</form>
 <div id = "search_remind"></div>
 <script src="../css/jquery-1.11.0.js">
 	$(function(){
@@ -48,5 +45,4 @@
 </script>
 
 
-</div>
 </div>
