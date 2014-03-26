@@ -33,7 +33,7 @@ class Contact_Model {
             $message = 'Invalid query: ' . mysql_error() . "\n";
             die($message);
         }
-        while ($row = mysql_fetch_array($result)) {
+        while ($row = mysql_fetch_array($result,MYSQL_BOTH)) {
             $backArray[] = $row;
         }
         mysql_close($con);
