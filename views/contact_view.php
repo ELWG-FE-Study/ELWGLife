@@ -5,7 +5,6 @@
 	<meta charset = "utf-8">
 
 	<?php include('\partial\html_head.php');?>
-	
 
 </head>
 
