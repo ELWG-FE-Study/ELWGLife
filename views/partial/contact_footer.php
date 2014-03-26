@@ -5,7 +5,7 @@
 <div id="footer">
 <table>
 	<tbody>
-		<tr >
+		<tr>
 			<td>
 			<p>
 			湖北省智能互联网技术重点实验室（华中科技大学）&nbsp;&nbsp;

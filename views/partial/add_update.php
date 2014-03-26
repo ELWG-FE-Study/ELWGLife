@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="css/pure.css">
-<div class = "pure-g-r">
+<div id = "ContactContent">
+<div>
 <script type = "text/javascript">
 $(document).ready(function(){
 	$("#show").click(function(){
@@ -9,7 +9,7 @@ $(document).ready(function(){
 </script>
 
 <body>
-<button id = "show" type = "button">添加或修改</button>
+<button id = "show" class = "pure-button">添加或修改</button>
 <br>
 <table class = "pure-table pure-table-bordered" display = "none">
 <thead>
@@ -37,4 +37,5 @@ $(document).ready(function(){
 
 
 </body>
+</div>
 </div>

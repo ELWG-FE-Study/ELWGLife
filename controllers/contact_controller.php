@@ -12,7 +12,8 @@ class Contact_Controller//类名Contact_Controller
 	function index()
 	{
 		 //从model层获取数据
-        $data = $this->contact_model->get_contact_data();//调用contact_model中的get_contact_data函数，获得联系人信息
+        $data = $this->contact_model->get_contact_data();
+        var_dump($data);//调用contact_model中的get_contact_data函数，获得联系人信息
         //加载主界面
         require('../views/contact_view.php');
         /*加载contact_view.php页面,contact_view.php需要用到从contact_model中调用get_contact_data得到的数据*/

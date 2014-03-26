@@ -1,4 +1,5 @@
-<div class = "pure-g-r">
+<div id = "ContactContent">
+<div>
 
 <table class = "pure-table pure-table-bordered">
 <thead>
@@ -12,15 +13,20 @@
 	</tr>
 </thead>
 
-<tbody>
+<tbody >
+	<?php var_dump($data);?>
+	<?php foreach ($data as $row) { ?>
 	<tr>
-		<td><?= $data['name'] ?></td>
-		<td><?= $data['sex'] ?></td>
-		<td><?= $data['grade'] ?></td>
-		<td><?= $data['tel'] ?></td>
-		<td><?= $data['qq'] ?></td>
-		<td><?= $data['email'] ?></td>
+		
+		<td><?= $row['name'] ?></td>
+		<td><?= $row['sex'] ?></td>
+		<td><?= $row['grade'] ?></td>
+		<td><?= $row['tel'] ?></td>
+		<td><?= $row['qq'] ?></td>
+		<td><?= $row['email'] ?></td>
+		
 	</tr>
+	<?php }?>
 </tbody>
 </table>
 
@@ -51,4 +57,5 @@
 </script>
 
 
+</div>
 </div>
