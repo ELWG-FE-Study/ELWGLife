@@ -1,4 +1,4 @@
-<title>ELWGLife</title>
+    <title>ELWGLife</title>
     <link rel="stylesheet" href="../css/pure-min.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/contact_content.css">

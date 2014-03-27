@@ -1,47 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 html,body {
-	margin: 0;
-	padding:0;
-	height: 100%;
+    margin: 0;
+    padding:0;
+    height: 100%;
 }
 
 #container {
-	min-height:100%;
-	height: auto;
-	height: 100%; /*IE6不识别min-height*/
-	position: relative;
+    min-height:100%;
+    height: auto;
+    height: 100%; /*IE6不识别min-height*/
+    position: relative;
 }
 
 
 #header
 {
-	margin-left: 15%;
-	margin-right: 15%;
-	width: 70%;
-	font-family:"华文新魏";
-	font-size: 25px;
-	font-weight: bold;
-	background-color: #95CACA;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    font-family:"华文新魏";
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #35D4A0;
+    margin-bottom: 5px;
 }
 
 #page
 {
-	width: 70%;
-	margin: 0 auto;
-	padding-bottom: 60px;/*等于footer的高度*/
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 60px;/*等于footer的高度*/
 }
 
 #footer
 {
-	position: absolute;
-	bottom: 0;
-	background-color: #95CACA;
-	font-style: "宋体";
-	font-size: 10px;
-	margin-left:15%;
-	margin-right:15%;
-	width: 70%;
-	clear: both;
-	height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: #35D4A0;
+    font-style: "宋体";
+    font-size: 10px;
+    margin-left:15%;
+    margin-right:15%;
+    width: 70%;
+    clear: both;
+    height: 60px;
 }
 
 
