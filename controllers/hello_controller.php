@@ -1,5 +1,5 @@
 <?php 
-require('../models/hello_model.php');
+require(ABS_PATH . 'models/hello_model.php');
 
 class HelloController 
 {
@@ -13,9 +13,9 @@ class HelloController
         //从model层获取数据
         $data = $this->hello_model->get_hello_data();
         //加载主界面
-        require('../views/hello.php');
+        require(ABS_PATH . 'views/hello.php');
         //加载footer部分
-        require('../views/footer.php'); 
+        require(ABS_PATH . 'views/footer.php'); 
     }
 }
 /* End of file controllers/hello_controller.php */ 
