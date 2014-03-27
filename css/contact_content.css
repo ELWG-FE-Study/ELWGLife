@@ -9,12 +9,10 @@ html,body{
     padding:0;
 }
 
-#ContactContent{
-    height:100%;
+.ContactContent{
     margin-left: 15%;
     margin-right: 15%;
     width:70%;
-    padding-top: 3px;
 }
 
 #search{font-size: 14px;}
@@ -33,9 +31,6 @@ html,body{
 .hidden{
     display: none;
 }
-
-
-
 
 .search_css{
     margin-bottom: 5px;

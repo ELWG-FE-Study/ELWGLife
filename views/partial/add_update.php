@@ -1,34 +1,8 @@
 <div id = "update">
-<script type = "text/javascript">
-$(document).ready(function(){
-    $(".btn-toggle-container").click(function() {
-        $(".new-contact-container").toggle();
-    });
-});
-</script>
-
-<script type = "text/javascript">
-$(document).ready(function(){
-        $('.btn-insert').click(function() {
-        var $container = $('.new-contact-container');
-        // console.log();
-        // console.log($container.find('input[name=sex]').val());
-
-        $.post('../page/ajax/update_contact.php', {
-            $name: $container.find('input[name=name]').val(),
-            $sex: $container.find('input[name=sex]').val(),
-            $grade: $container.find('input[name=grade]').val()
-            $tel: $container.find('input[name=tel]').val(),
-            $qq: $container.find('input[name=qq]').val(),
-            $email: $container.find('input[name=email]').val(),
-        });
-    });
-</script>
-
 
 <button class="button_contact pure-button btn-toggle-container">添加或修改</button>
 <div class="new-contact-container hidden">
-    <form class="pure-form">
+    <!-- <form class="pure-form"> -->
     <table>
         <tr align="center">
             <th>姓名</th>
@@ -50,6 +24,6 @@ $(document).ready(function(){
         <td><button class="button_contact pure-button btn-insert">完成</button></td>
         </tr>
     </table>
-    </form>
+    <!-- </form> -->
 </div>
 </div>

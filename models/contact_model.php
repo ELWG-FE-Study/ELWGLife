@@ -54,11 +54,17 @@ class Contact_Model {
         qq='$qq', email='$email' ");
         } else $result = mysql_query("INSERT INTO contacts (member_name,sex,grade,phone,qq,email)
  VALUES ('$name','$sex','$grade','$tel','$qq','$email')");
-        if (!$result) {
-            $message = 'Invalid query: ' . mysql_error() . "\n";
-            die($message);
-        }
+
+
         mysql_close($con);
+        if (!$result) {
+            return 'Invalid query: ' . mysql_error() . "\n";
+            // $message = 'Invalid query: ' . mysql_error() . "\n";
+            // die($message);
+        } else {
+            return 'ok';
+        }
+        
     }
 
     function search_contact_data($key) {
