@@ -1,11 +1,17 @@
 $(document).ready(function(){
-    // $('#search input[name = "k"]').keyup(function() {
-    //                 $.post('search_remind.php',{'value':$(this).val()},
-    //                     fuction(data){
-    //                         if(data=='0') $('#search_auto').html().css('display','none');
-    //                         else $('#search_auto').html(data).css('display','block');
-    //                         });
-    //                 });
+    $(".contact_button").click(function(event){
+        event.preventDefault();
+        var $form =$('.search_content');
+        key = $form.find("input[name='s']").val();
+        var posting = $.post('../page/ajax/search_contact.php',{s:key});
+
+        //把结果放在div中
+        /*posting.done(function(data){
+            var content = $(data).find(".ContactContent");
+            $("#result").empty().append(content);
+        });*/
+    });
+
 
     $(".btn-toggle-container").click(function() {
         $(".new-contact-container").toggle();

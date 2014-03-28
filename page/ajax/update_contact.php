@@ -6,4 +6,4 @@ $controller = new Contact_Controller();
 // $controller->update_contact($_POST['name'],$_POST['sex'],$_POST['grade'],
 // 	$_POST['tel'],$_POST['qq'],$_POST['email']);
 $controller->update_contact();
-/* End of file page/update_contact.php */ 
+/* End of file page/ajax/update_contact.php */ 

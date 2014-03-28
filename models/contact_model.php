@@ -51,7 +51,7 @@ class Contact_Model {
         $search = mysql_query($sql);
         if ($search) {
             $result = mysql_query(" UPDATE contacts SET sex='$sex',grade='$grade',phone='$tel',
-        qq='$qq', email='$email' ");
+        qq='$qq', email='$email' WHERE member_name='$name'");
         } else $result = mysql_query("INSERT INTO contacts (member_name,sex,grade,phone,qq,email)
  VALUES ('$name','$sex','$grade','$tel','$qq','$email')");
 
