@@ -52,11 +52,12 @@ class Contact_Controller
         }
     }
     //当contact_view.php页面“搜索”按钮被点击时，调用本函数，提交表单，从数据库中进行搜索
-    function search_contact($key)
+    function search_contact()
     {
-        //$key=$_POST['key'];
+        $key=$_POST['key'];
         //根据keywords进行搜索    
-        $this->contact_model->search_contact_data($key);     
+        $result_search = $this->contact_model->search_contact_data($key); 
+        
     }
 }
 

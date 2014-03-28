@@ -20,7 +20,7 @@ class Duty_Model {
         return $duty_result;
     }
 
-    function duty_login(){
+    function get_login_data(){
         $dbName = "db_elwg_life";
         $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
         if (!$con) {
