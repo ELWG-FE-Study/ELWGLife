@@ -17,10 +17,6 @@ class Contact_Model {
         }
 
         mysql_query("set names utf8;");
-
-
-        mysql_query("set names utf8;"); 
-
         $sql = "SELECT * FROM contacts ";
         $result = mysql_query($sql);
         $backArray[] = array();
@@ -47,13 +43,21 @@ class Contact_Model {
         }
         mysql_query("set names utf8;"); 
         $backArray[] = array();
-        $sql = "SELECT member_name FROM contacts WHERE member_name=$name";
-        $search = mysql_query($sql);
+        $sql = "SELECT member_name FROM contacts WHERE member_name='$name'";
+        $search = mysql_query($sql,$con);
         if ($search) {
             $result = mysql_query(" UPDATE contacts SET sex='$sex',grade='$grade',phone='$tel',
+<<<<<<< HEAD
         qq='$qq', email='$email' WHERE member_name='$name'");
         } else $result = mysql_query("INSERT INTO contacts (member_name,sex,grade,phone,qq,email)
  VALUES ('$name','$sex','$grade','$tel','$qq','$email')");
+=======
+            qq='$qq', email='$email' WHERE member_name='$name' ");
+        } 
+        //else {
+         //   $result = mysql_query("INSERT INTO contacts VALUES ('$name','$sex','$grade','$tel','$qq','$email')",$con);
+        //};
+>>>>>>> aae308ca9d04a665aa8d3b6f3039c2532ddfd257
 
 
         mysql_close($con);

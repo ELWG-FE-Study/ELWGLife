@@ -23,9 +23,14 @@ html,body{
 }
 
 #update{
+    margin: 0 auto;
     margin-left: 15%;
-    margin-right: 15%;
     width: 70%;
+}
+
+.new-contact-container{
+    margin-left: 0;
+    width: 100%;
 }
 
 .hidden{
@@ -47,4 +52,10 @@ a:link{
     border-radius: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+.contact_table{
+    border: solid;
+    margin: 0 auto;
+    padding: 0;
 }

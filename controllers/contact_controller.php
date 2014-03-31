@@ -55,12 +55,18 @@ class Contact_Controller
     function search_contact()
     {
         $key=$_POST['key'];
+<<<<<<< HEAD
         //根据keywords进行搜索
 
         $result_search = $this->contact_model->search_contact_data($key);
         var_dump($result_search);
 
 
+=======
+        //根据keywords进行搜索    
+        $result_search = $this->contact_model->search_contact_data($key); 
+        
+>>>>>>> aae308ca9d04a665aa8d3b6f3039c2532ddfd257
     }
 }
 
