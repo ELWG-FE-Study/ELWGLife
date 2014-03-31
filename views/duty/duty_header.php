@@ -7,7 +7,7 @@
 	<div>	
  	<p class="headertime">时间：</p>	
 	<p>
-	<?php echo date('W'); ?>
+	<p class="weekday">
 	<butotn type="button" class=" pure-button pure-button-disabled lateRecord">
 		迟到记录</button>
 	</p>

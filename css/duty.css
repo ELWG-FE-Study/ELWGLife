@@ -24,7 +24,7 @@ p #dutytable{
 	float: left;
 }
 .nextweekButton{
-	float: clear;
+	clear:left;
 	float: right;
 }
 .dutyContent{
