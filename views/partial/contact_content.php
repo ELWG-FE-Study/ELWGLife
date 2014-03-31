@@ -1,10 +1,10 @@
 <div>
 <form  class="pure-form" id="searchForm" action="../page/ajax/search_contact.php">
     <input type = "text" class="search_css search_content" name = "s">
-    <button class="pure-button contact_button">搜索</button>
+    <button class="pure-button search_button">搜索</button>
 </form>
 <div id="result">
-    <?=$result_search ?>
+    
 </div>
 
 

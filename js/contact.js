@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $(".contact_button").click(function(event){
+    $(".search_button").click(function(event){
         event.preventDefault();
-        var $form =$('.search_content');
+        var $form = $('.search_content');
         key = $form.find("input[name='s']").val();
-        var posting = $.post('../page/ajax/search_contact.php',{s:key});
+        $.post('../page/ajax/search_contact.php',{s:key});
 
         //把结果放在div中
         /*posting.done(function(data){
