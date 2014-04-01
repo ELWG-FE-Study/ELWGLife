@@ -1,4 +1,6 @@
 <div id="container">
+<div id="page" class="clearfix">
+</div>
 <div id="footer">
 <table>
     <tbody>
