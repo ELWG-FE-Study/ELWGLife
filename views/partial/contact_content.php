@@ -1,5 +1,4 @@
 <div>
-<<<<<<< HEAD
 <form  class="pure-form" id="searchForm" action="../page/ajax/search_contact.php">
     <input type = "text" class="search_css search_content" name = "s">
     <button class="pure-button search_button">搜索</button>
@@ -8,12 +7,6 @@
     
 </div>
 
-=======
-<div>
-    <input type = "text" class="search_css" name = "s"/>
-    <button class="pure-button button_contact">搜索</button>
-</div>
->>>>>>> aae308ca9d04a665aa8d3b6f3039c2532ddfd257
 
 <table class="pure-table ContactContent contact_table">
     <thead>
