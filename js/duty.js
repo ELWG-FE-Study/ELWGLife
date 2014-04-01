@@ -27,7 +27,7 @@ function getTime(){
     var M=time.getMinutes();
     var S=time.getSeconds();
     M=checkTime(M);
-    S=checkTime(S);“”
+    S=checkTime(S);
     document.getElementById("headertime").innerHTML =H+':'+M+':'+S;
     setTimeout("getTime()", 500); 
 }  
