@@ -1,10 +1,9 @@
-<div>
-		<table class="pure-table pure-table-horizontal">
+<div id="dutytable">
+	<p >值日表<button calss="pure-button" id="nextweekButton">下一周</button>
+	</p>
+</div>
+		<table class="pure-table pure-table-horizontal">			
 			<thead>
-				<tr>
-					<th><p id="dutytable">值日表</p></th>
-					<th><button calss="pure-button nextweekButton">下一周</button></th>
-				</tr>
 				<tr>
 					<th>星期一</th>
 					<th>星期二</th>
@@ -16,24 +15,41 @@
 				</tr>
 			</thead>
 			<tbody> <!-- $duty_result[]主要是model层返回的本周及次周值日成员 -->
-				<tr>  
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>	
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
+				<!--<tr>  
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>	
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
 				</tr>
 				<tr class="nextweek">
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>	
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
-					<td><?php $duty_result[] ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>	
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+					<td><?php $duty_result ?></td>
+				</tr>-->
+				<tr>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+				</tr>
+				<tr class="nextweek">
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
+					<td>王晨</td>
 				</tr>
 			</tbody>
 		</table>
-	</div>

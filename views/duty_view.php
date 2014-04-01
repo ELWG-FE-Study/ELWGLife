@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta charset = "utf-8">
-    <?php include(ABS_PATH . 'views/duty/dutyhead.php');?>
+	
+    <?php include(ABS_PATH . 'views/duty/dutyhead.php'); ?>
 </head>
 <body>
 	<div class="pure-g-r">
@@ -14,4 +13,6 @@
 	<?php include(ABS_PATH . 'views/duty/duty_footer.php'); ?>
 </div>
 <div id="rightArea"></div>
+</div>
 </body>
+</html>

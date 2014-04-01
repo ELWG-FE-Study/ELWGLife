@@ -5,12 +5,10 @@
 		<li><a href = "#">通讯录</a></li>
 	</ul>
 	<div>	
- 	<p class="headertime">时间：</p>	
-	<p>
-	<p class="weekday">
-	<butotn type="button" class=" pure-button pure-button-disabled lateRecord">
-		迟到记录</button>
-	</p>
+ 	<p >时间：<span id="headertime"></span>
+ 	<button type="button" class=" pure-button pure-button-disabled lateRecord">迟到记录</button>
+	</p>	 		
+	<p id="weekday"></p>	
 </div>
 </div>
 

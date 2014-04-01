@@ -15,7 +15,7 @@ $(document).ready(function() {
             },
             function() {
                //if (data === 'ok') //登陆成功返回data，并且data=ok
-                    $.post("../cookies.php?action=ok");
+                    $.post("../cookies.php?action=ok");//
                 //else return;
             }); 
     });
@@ -29,7 +29,7 @@ function getTime(){
     M=checkTime(M);
     S=checkTime(S);
     document.getElementById("headertime").innerHTML =H+':'+M+':'+S;
-    setTimeout("gettime()", 500); 
+    setTimeout("getTime()", 500); 
 }  
 function getDay(){
     var time=new Date();
