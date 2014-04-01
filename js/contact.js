@@ -1,5 +1,4 @@
 $(document).ready(function(){
-<<<<<<< HEAD
     $(".search_button").click(function(event){
         event.preventDefault();
         var $form = $('.search_content');
@@ -11,14 +10,12 @@ $(document).ready(function(){
             var content = $(data).find(".ContactContent");
             $("#result").empty().append(content);
         });*/
-=======
     $(".contact_button").click(function(event){
         event.preventDefault();
         var $form =$('.search_content');
         $key = $form.find("input[name=s]").val();
         var posting = $.post('../page/ajax/search_contact.php',{s:key});
 
->>>>>>> aae308ca9d04a665aa8d3b6f3039c2532ddfd257
     });
 
 
