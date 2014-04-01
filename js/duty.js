@@ -14,9 +14,10 @@ $(document).ready(function() {
                 password: $login.find('input[name=password]').val()
             },
             function() {
-               //if (data === 'ok') //登陆成功返回data，并且data=ok
+                
+               /*if (data === 'ok') //登陆成功返回data，并且data=ok
                     $.post("../cookies.php?action=ok");
-                //else return;
+                else return;*/
             }); 
     });
 });
