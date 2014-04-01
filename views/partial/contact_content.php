@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div id="mainContent">
 <form class="pure-form">
     <input type = "text"  class="search_css" name = "key"/>
@@ -40,6 +41,8 @@
 
 </div>
 =======
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 =======
