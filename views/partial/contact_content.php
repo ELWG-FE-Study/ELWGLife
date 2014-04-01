@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <div id="mainContent">
 <form class="pure-form">
     <input type = "text"  class="search_css" name = "key"/>
@@ -37,6 +40,12 @@
 
 </div>
 =======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 <div>
 <form  class="pure-form" id="searchForm" action="../page/ajax/search_contact.php">
     <input type = "text" class="search_css search_content" name = "s">

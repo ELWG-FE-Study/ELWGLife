@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 window.onload = function(){
 	time=new Date();
 	week=time.getDay();
@@ -40,6 +43,12 @@ $(document).ready(function() {
     });
 });
 =======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 var weekArray=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
 
 $(document).ready(function() {
@@ -84,4 +93,13 @@ if (t<10)
   t="0" + t;
   return t;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD

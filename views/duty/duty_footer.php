@@ -31,5 +31,14 @@
 	<br/>
 	<br/>
 	<button type="button" class="pure-button loginButton" >总管登录</button>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 </div>

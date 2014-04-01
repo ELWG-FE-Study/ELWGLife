@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <div>
 		<table class="pure-table pure-table-horizontal">
 			<thead>
@@ -39,6 +42,12 @@
 		</table>
 	</div>
 =======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 <!--<div id="dutytable"></div>-->
 	<p >值日表<button calss="pure-button" id="nextweekButton">下一周</button>
 
@@ -79,4 +88,13 @@
         </tbody>
 			</tbody>
 		</table>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
