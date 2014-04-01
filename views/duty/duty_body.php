@@ -1,7 +1,8 @@
-<div id="dutytable">
+<!--<div id="dutytable"></div>-->
 	<p >值日表<button calss="pure-button" id="nextweekButton">下一周</button>
+
 	</p>
-</div>
+
 		<table class="pure-table pure-table-horizontal">			
 			<thead>
 				<tr>
