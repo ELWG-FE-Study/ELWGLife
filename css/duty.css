@@ -1,8 +1,8 @@
 body{
-	margin:0px;
-	padding:0px;
-	
+	margin:0 auto;
+	padding:0px;	
 }
+
 #leftArea{
 	width:15%;
 	height: 100%;
@@ -17,21 +17,31 @@ body{
 	height:100%;
 	padding-bottom: 50px;
 }
+
 .lateRecord{
 	float: right;
 }
-p #dutytable{
-	float: left;
-}
-.nextweekButton{
-	clear:left;
+
+#nextweekButton{
 	float: right;
 }
 .dutyContent{
+	margin-top: 50px;
 	width: 100%;
 	height: 200px;
 	border: 2px solid grey;
 }
+
 .login{
-	align:center;
+	position: relative;
+	margin-top: 100px;
+	left: 40%;
+}
+.loginButton{
+	position: absolute;
+	left:5%;
+}
+table{
+	width:100%;
+	text-align: center;
 }
