@@ -20,6 +20,7 @@ body{
 
 .lateRecord{
 	float: right;
+	border-radius: 20px;
 }
 
 #nextweekButton{
@@ -34,12 +35,13 @@ body{
 
 .login{
 	position: relative;
-	margin-top: 100px;
+	margin-top: 50px;
 	left: 40%;
 }
 .loginButton{
 	position: absolute;
 	left:5%;
+	border-radius: 20px;
 }
 table{
 	width:100%;
