@@ -15,7 +15,7 @@ $(document).ready(function() {
             },
             function() {
                //if (data === 'ok') //登陆成功返回data，并且data=ok
-                    $.post("../cookies.php?action=ok");//
+                    $.post("../cookies.php?action=ok");
                 //else return;
             }); 
     });
@@ -27,7 +27,7 @@ function getTime(){
     var M=time.getMinutes();
     var S=time.getSeconds();
     M=checkTime(M);
-    S=checkTime(S);
+    S=checkTime(S);“”
     document.getElementById("headertime").innerHTML =H+':'+M+':'+S;
     setTimeout("getTime()", 500); 
 }  
