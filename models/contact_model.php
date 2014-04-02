@@ -19,7 +19,6 @@ class Contact_Model {
         mysql_query("set names utf8;");
         $sql = "SELECT * FROM contacts";
         $result = mysql_query($sql);
-        $backArray[] = array();//返回的数组
         if (!$result) {
             $message = 'Invalid query: ' . mysql_error() . "\n";
             die($message);
