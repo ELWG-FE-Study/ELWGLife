@@ -1,5 +1,5 @@
 <div id="footer">
-    <div class="container-center">
+    <div class="container-center footer-container">
         <p>
             湖北省智能互联网技术重点实验室（华中科技大学）&nbsp;&nbsp;
             湖北省武汉市洪山区珞瑜路1037号 &nbsp;&nbsp;
