@@ -13,8 +13,10 @@
             $menu_item = 'contacts';
             include('partial/header.php');
             ?>
-            <?php include('partial/contact_content.php');?>
-            <?php include('partial/add_update.php');?>
+            <div class="container-center">
+                <?php include('partial/contact_control.php');?>
+                <?php include('partial/contact_content.php');?>
+            </div>
         </div>
     </div>
     <?php include('partial/footer.php');?>

@@ -1,5 +1,5 @@
 /* 全局与覆写purecss库*/
-html {
+html, button, input, select, textarea {
     font-family: Arial, '微软雅黑', Helvetica, sans-serif;
 }
 
@@ -23,11 +23,19 @@ html {
     padding: 8px 12px;
 }
 
+.pure-form-aligned .pure-control-group label {
+    width: 4em;
+}
+
 /* 公用类 */
 
 .container-center {
     width: 70%;
     margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
 }
 
 .pull-left {
@@ -36,6 +44,10 @@ html {
 
 .pull-right {
     float: right;
+}
+
+.hide {
+    display: none;
 }
 
 .form-fields {

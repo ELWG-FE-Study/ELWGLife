@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/<?= $css ?>">
     <?php }
 } ?>
-<!-- <link rel="stylesheet" href="../css/contact_content.css"> -->
-<link rel="stylesheet" href="../css/add_update.css">  
+
 <script src="../js/jquery-1.11.0.js"></script>
+<script src="../js/jquery.modal.js"></script>
 <script src="../js/contact.js"></script>
