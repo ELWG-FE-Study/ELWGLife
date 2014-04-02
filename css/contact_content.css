@@ -51,3 +51,8 @@ a:link{
     margin-top: 5px;
     font-family: '微软雅黑', Helvetica,  Arial, sans-serif;
 }
+
+.searchResult {
+    margin-top:10px;
+    margin-bottom: 20px; 
+}

@@ -68,7 +68,7 @@ class Contact_Model {
         }          
  }
 
-    function search_contact_data($keyWord) {
+    function search_contact_data($key) {
         $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
         if (!$con) {
             die('Could not connect: ' . mysql_error());
@@ -80,18 +80,22 @@ class Contact_Model {
         }
 
         mysql_query("set names utf8;");
-        $sql = "SELECT * FROM contacts WHERE member_name='keyWord";
+        $sql = "SELECT * FROM contacts WHERE member_name LIKE '%$key%' ";
         $result = mysql_query($sql);
-        $backArray[] = array();//返回的数组
+        $backArrayAll[] = array();//返回的数组
         if (!$result) {
             $message = 'Invalid query: ' . mysql_error() . "\n";
             die($message);
         }
-        while ($row = mysql_fetch_array($result,MYSQL_BOTH)) {
-            
-            $backArray[] = $row;
-        }
+        $backArrayAll = mysql_fetch_array($result,MYSQL_ASSOC);            
         mysql_close($con);
+        $backArray = array('member_name' => $backArrayAll[member_name],
+                            'sex' => $backArrayAll[sex],
+                            'grade' => $backArrayAll[grade],
+                            'phone' => $backArrayAll[phone],
+                            'qq' => $backArrayAll[qq],
+                            'email' =>$backArrayAll[email],
+                            );
         return $backArray;
     }
 }

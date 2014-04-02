@@ -1,11 +1,27 @@
 <div id="mainContent">
-<form class="pure-form">
-    <input type = "text"  class="search_css" name = "key"/>
+<div class="pure-form">
+    <div class="searchInput">
+        <input type = "text"  class="search_css" name = "key"/>
+        <button class="pure-button button_contact btn-search">搜索</button>
+    </div>
+    <div class="searchResult hidden">
+        <table class="pure-table ContactContent"  >
+            <thead >
+                <tr align="center" >
+                    <td >姓名</td>
+                    <td >性别</td>
+                    <td >年级</td>
+                    <td >电话</td>
+                    <td >QQ</td>
+                    <td >常用邮箱</td>
+                </tr>
+            </thead>
+            <tbody align="center"></tbody> 
+        </table>
+    </div>
+</div>
 
-    <button class="pure-button button_contact btn-search">搜索</button>
-</form>
-
-<table class="pure-table ContactContent"  >
+<table class="pure-table ContactContent" id="contactContent"  >
     <thead >
         <tr align="center" >
             <td >姓名</td>
@@ -16,7 +32,7 @@
             <td >常用邮箱</td>
         </tr>
     </thead>
-    <tbody>
+    <tbody align="center">
 
     <?php foreach ($data as $row) { ?>
     <tr align="center" >
