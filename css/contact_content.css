@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.ContactContent{
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70%;
+    font-family: '微软雅黑', Helvetica,  Arial, sans-serif;
+    color: #444444;
+}
+
+#search{font-size: 14px;}
+#search_remind{
+    border:1px solid #817FB2; 
+    position:absolute;
+     display:none;
+}
+
+#update{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.hidden{
+    display: none;
+}
+
+.search_css{
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
+
+a:link{
+    background-color: #35D4A0;
+}
+
+.button_contact{
+    background-color: #35D4A0;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: '微软雅黑', Helvetica,  Arial, sans-serif;
+}
+
+.searchResult {
+    margin-top:10px;
+    margin-bottom: 20px; 
+}
