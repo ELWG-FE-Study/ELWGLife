@@ -30,6 +30,20 @@ html {
     margin: 0 auto;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.form-fields {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
 /* 布局 */
 
 html, body, #wrapper {

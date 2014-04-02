@@ -7,6 +7,10 @@
     color: #333;
 }
 
+.input-keyword {
+    width: 320px;
+}
+
 #search{font-size: 14px;}
 #search_remind{
     border:1px solid #817FB2; 

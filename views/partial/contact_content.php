@@ -1,6 +1,8 @@
 <div class="container-center">
-    <div class="pure-form search-container">
-        <input type="text" name="key" class="pure-input-1-3" placeholder="输入要搜索的人名"/>
+    <div class="pure-form search-container pull-right">
+        <div class="form-fields">
+            <input type="text" name="key" class="input-keyword" placeholder="输入要搜索的人名"/>
+        </div>
         <button class="pure-button pure-button-primary btn-search">搜索</button>
     </div>
 
