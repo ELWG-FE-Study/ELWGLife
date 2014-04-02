@@ -1,17 +1,14 @@
+/* 全局与覆写purecss库*/
+
 html {
     font-family: Arial, '微软雅黑', Helvetica, sans-serif;
-}
-
-#header {
-    font-size: 1.2em;
-    background-color: #2d313d;
-    margin-bottom: 5px;
-    padding: 0 10px;
 }
 
 .pure-menu li a, .pure-menu .pure-menu-heading {
     color: #fff;
     padding: 10px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .pure-menu .pure-menu-selected a {
@@ -23,9 +20,21 @@ html {
     background-color: #2980b9;
 }
 
+.pure-table td, .pure-table th {
+    padding: 8px 12px;
+}
+
 .container-center {
     width: 70%;
     margin: 0 auto;
+}
+
+
+#header {
+    font-size: 1.2em;
+    background-color: #2d313d;
+    margin-bottom: 5px;
+    padding: 0 10px;
 }
 
 #container {

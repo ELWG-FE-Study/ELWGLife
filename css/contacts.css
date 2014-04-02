@@ -1,0 +1,29 @@
+.search-container {
+    margin: 10px 0;
+}
+
+.contacts-table {
+    width: 100%;
+    color: #333;
+}
+
+#search{font-size: 14px;}
+#search_remind{
+    border:1px solid #817FB2; 
+    position:absolute;
+     display:none;
+}
+
+#update{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.hidden{
+    display: none;
+}
+
+.button_contact{
+    background-color: #35D4A0;
+}

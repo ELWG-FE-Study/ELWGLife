@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include('partial/html_head.php');?>
+    <?php
+    $css_list = array('contacts.css');
+    include('partial/html_head.php');
+    ?>
 </head>
 <body>
     <?php 
@@ -10,6 +13,6 @@
     ?>
     <?php include('partial/contact_content.php');?>
     <?php include('partial/add_update.php');?>
-    <?php include('partial/contact_footer.php');?>
+    <?php include('partial/footer.php');?>
 </body>
 </html>
