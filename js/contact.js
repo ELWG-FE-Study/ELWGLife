@@ -1,34 +1,12 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-    $(".search_button").click(function(event){
-        event.preventDefault();
-        var $form = $('.search_content');
-        key = $form.find("input[name='s']").val();
-        $.post('../page/ajax/search_contact.php',{s:key});
-
-        //把结果放在div中
-        /*posting.done(function(data){
-            var content = $(data).find(".ContactContent");
-            $("#result").empty().append(content);
-        });*/
-=======
-    $(".contact_button").click(function(event){
-        event.preventDefault();
-        var $form =$('.search_content');
-        $key = $form.find("input[name=s]").val();
-        var posting = $.post('../page/ajax/search_contact.php',{s:key});
-
->>>>>>> aae308ca9d04a665aa8d3b6f3039c2532ddfd257
-    });
-
-
+    
     $(".btn-toggle-container").click(function() {
         $(".new-contact-container").toggle();
     });
-
-    $('.btn-insert').click(function() {
+    
+     $('.btn-insert').click(function() {
         var $container = $('.new-contact-container');
-        $.post('../page/ajax/update_contact.php', {
+        $.post('../page/ajax/insert.php', {
             name: $container.find('input[name=name]').val(),
             sex: $container.find('input[name=sex]').val(),
             grade: $container.find('input[name=grade]').val(),
@@ -38,11 +16,30 @@ $(document).ready(function(){
         }, function(data) {
             var $row = $('<tr>'),
                 key;
-
             for(key in data) {
                 $row.append($('<td>').html(data[key]));
             }
-            $('.ContactContent tbody').append($row);
+            $('#contactContent tbody').append($row);
         }, 'json');
-    });
-}); 
+        setTimeout(function(){window.location.reload();},900);
+     }); 
+
+     $(".btn-search").click(function() {
+        //alert("a");
+        $(".searchResult").show();
+        var $container = $('#mainContent');
+        $.post('../page/ajax/search_contact.php', {
+            key: $container.find('input[name=key]').val(),
+        }, function(data) {
+            console.log(data);
+            var $row = $('<tr>'),
+                key;
+            for(key in data) {
+                $row.append($('<td>').html(data[key]));
+            }
+            $('.searchResult tbody').append($row);
+        },'json');
+        //var a = $container.find('input[name=key]').val();
+        //alert(a);
+     });
+});
