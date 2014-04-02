@@ -1,49 +1,58 @@
-body{
+body
+{
 	margin:0 auto;
-	padding:0px;	
+	padding:0;
 }
 
-#leftArea{
-	width:15%;
-	height: 100%;
-}
-#rightArea{
-	width:15%;
-	height:100%;
-}
-#centerArea{
-	position: relative;
+#centerArea
+{
+	position:relative;
 	width:70%;
 	height:100%;
-	padding-bottom: 50px;
+	padding-bottom:50px;
 }
 
-.lateRecord{
-	float: right;
-	border-radius: 20px;
+.lateRecord
+{
+	float:right;
+	border-radius:20px;
 }
 
-#nextweekButton{
-	float: right;
-}
-.dutyContent{
-	margin-top: 50px;
-	width: 100%;
-	height: 200px;
-	border: 2px solid grey;
+#nextweekButton
+{
+	float:right;
 }
 
-.login{
-	position: relative;
-	margin-top: 50px;
-	left: 40%;
-}
-.loginButton{
-	position: absolute;
-	left:5%;
-	border-radius: 20px;
-}
-table{
+.dutyContent
+{
+	margin-top:50px;
 	width:100%;
-	text-align: center;
+	height:200px;
+	border:2px solid grey;
+}
+
+.login
+{
+	position:relative;
+	margin-top:50px;
+	left:40%;
+}
+
+.loginButton
+{
+	position:absolute;
+	left:5%;
+	border-radius:20px;
+}
+
+table
+{
+	width:100%;
+	text-align:center;
+}
+
+#leftArea,#rightArea
+{
+	width:15%;
+	height:100%;
 }
