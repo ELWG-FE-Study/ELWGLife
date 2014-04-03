@@ -9,16 +9,17 @@ $(document).ready(function() {
     });
     $('.loginButton').click(function() {
         $login = $('.login');
-        $.post('../page/duty_controller.php', {
-                username: $login.find('input[name=username]').val(),
-                password: $login.find('input[name=password]').val()
-            },
-            function() {
-                
-               /*if (data === 'ok') //登陆成功返回data，并且data=ok
-                    $.post("../cookies.php?action=ok");
-                else return;*/
-            }); 
+        $.post('../page/ajax/login.php', {
+            username: $login.find('input[name=username]').val(),
+            password: $login.find('input[name=password]').val()
+        }, function(response) {
+            console.log(response);
+            // $(".login").hide("slow");
+            // $(".manage_container").fadeIn("slow");
+           /*if (data === 'ok') //登陆成功返回data，并且data=ok
+                $.post("../cookies.php?action=ok");
+            else return;*/
+        }); 
     });
 });
    
