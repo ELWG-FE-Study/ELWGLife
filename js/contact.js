@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
     $(".search_button").click(function(event){
         event.preventDefault();
@@ -44,7 +43,6 @@ $(document).ready(function(){
         }, 'json');
     });
 }); 
-=======
 $(document).ready(function() {
     
     $(".btn-toggle-container").click(function() {
@@ -95,4 +93,4 @@ $(document).ready(function() {
         //alert(a);
     });
 });
->>>>>>> 4a8f2bc8fb21ccbcc9530d13e6bd7e6e36476c3a
+});

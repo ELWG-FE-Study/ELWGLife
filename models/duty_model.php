@@ -61,4 +61,5 @@ class Duty_Model {
         mysql_close($con);
         return $duty_result;
     }
-    
+}
+?>  
