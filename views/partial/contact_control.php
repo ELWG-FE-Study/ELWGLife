@@ -17,7 +17,7 @@
             </div>
             <div class="pure-control-group">
                 <label for="sex">性别</label>
-                <select class="pure-input-2-3">
+                <select name="sex" class="pure-input-2-3">
                     <option value="male">男</option>
                     <option value="female">女</option>
                 </select>
