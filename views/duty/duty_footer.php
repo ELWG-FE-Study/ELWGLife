@@ -16,4 +16,5 @@
 	<br/>
 	<br/>
 	<button type="button" class="pure-button pure-button-primary loginButton " >总管登录</button>
+
 </div>
