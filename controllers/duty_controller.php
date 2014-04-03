@@ -1,5 +1,6 @@
 <?php
 
+require (ABS_PATH . 'models/duty_model.php'); //引入duty_model文件
 require(ABS_PATH.'models/duty_model.php');//引入duty_model文件
 //类名Duty_Controller
 
@@ -63,5 +64,6 @@ class Duty_Controller {
         }
     }
 }
+
 
 

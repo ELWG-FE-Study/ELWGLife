@@ -20,7 +20,7 @@ class Duty_Model {
         }
         mysql_close($con);
         return $duty_result;
-    }
+}
     function get_duty_laterdata() {
         $dbName = "db_elwg_life";
         $con = mysql_connect("115.156.216.95", "lidasong", "123");
@@ -52,11 +52,13 @@ class Duty_Model {
             die('Could not connect: ' . mysql_error());
         }
         mysql_query("set names utf8");
-        $query = mysql_query("SELECT * FROM user", $con);
-        while ($result = mysql_fetch_array($query)) {
-            $login[] = $result;
+        $duty_result = array();
+        $query = mysql_query("SELECT member_name FROM later WHERE label='1' ");
+        //值日未完成按钮触发label变化
+        while ($later = mysql_fetch_array($query)) {
+            $duty_result[] = $later;
         }
-        return $login;
+        mysql_close($con);
+        return $duty_result;
     }
-}
-?>
+    
