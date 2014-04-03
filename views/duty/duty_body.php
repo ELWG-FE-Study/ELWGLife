@@ -1,8 +1,6 @@
-<p >值日表
-	<button type="button" class="pure-button pure-button-primary" id="nextweekButton">
-		下一周</button>
+<p >值日表<button calss="pure-button pure-button-primary" id="nextweekButton">下一周</button>
 </p>
-<table class="pure-table pure-table-horizontal duty-table">			
+<table class="pure-table pure-table-odd pure-table-horizontal">			
 	<thead>
 		<tr>
 			<th>星期一</th>
@@ -14,7 +12,7 @@
 			<th>星期日</th>
 		</tr>
 	</thead>
-	<tbody> <!-- $result[]主要是model层返回的本周及次周值日成员 -->
+	<tbody> <!-- $data[]主要是model层返回的本周及次周值日成员 -->
 		<tr> 
 			<td><?= $result[0] ?></td>
 			<td><?= $result[1] ?></td>
@@ -23,6 +21,8 @@
 			<td><?= $result[4] ?></td>
 			<td><?= $result[5] ?></td>
 			<td><?= $result[6] ?></td>
+					
+					
 		</tr>
 		<tr class="nextweek">
 			<td><?= $result[7] ?></td>

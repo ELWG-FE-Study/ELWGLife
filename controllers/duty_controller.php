@@ -1,5 +1,4 @@
 <?php
-
 require(ABS_PATH.'models/duty_model.php');//引入duty_model文件
 //类名Duty_Controller
 
@@ -56,13 +55,11 @@ class Duty_Controller {
         $info = array();
         $info = $this->duty_model->get_login_data();
         if ($username == $info[0] && $password == $info[1]) {
-            //return 'ok';
-            //登陆页面
-            //setcookie("name","loged",time()+24*3600);
-            
+            echo "ok";
+        } else {
+            echo "fail";
         }
     }
 }
-
 
 
