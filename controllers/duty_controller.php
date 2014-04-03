@@ -1,6 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 require (ABS_PATH . 'models/duty_model.php'); //引入duty_model文件
+=======
+require(ABS_PATH.'models/duty_model.php');//引入duty_model文件
+//类名Duty_Controller
+
+>>>>>>> cf41a5967f941c751b5f29a225b189a5204ec5a8
 class Duty_Controller {
     function __construct() {
         $this->duty_model = new Duty_Model(); //新建一个duty_model中的Duty_Model类
@@ -62,3 +68,7 @@ class Duty_Controller {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf41a5967f941c751b5f29a225b189a5204ec5a8

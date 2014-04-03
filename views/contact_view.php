@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta charset = "utf-8">
-
-    <?php include('\partial\html_head.php');?>
-
+    <?php
+    $css_list = array('contacts.css');
+    include('partial/html_head.php');
+    ?>
 </head>
-
 <body>
-    
-    <?php include('\partial\contact_header.php');?>
-    <?php include('\partial\contact_content.php');?>
-    <?php include('\partial\add_update.php');?>
-    <?php include('\partial\contact_footer.php');?>
+    <div id="wrapper">
+        <div id="main-container" class="clearfix">
+            <?php 
+            $menu_item = 'contacts';
+            include('partial/header.php');
+            ?>
+            <div class="container-center">
+                <?php include('partial/contact_control.php');?>
+                <?php include('partial/contact_content.php');?>
+            </div>
+        </div>
+    </div>
+    <?php include('partial/footer.php');?>
 </body>
 </html>
