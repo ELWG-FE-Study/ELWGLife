@@ -15,5 +15,5 @@
 	<input type="password" name="password" placeholder="密码" />
 	<br/>
 	<br/>
-	<button type="button" class="pure-button loginButton" >总管登录</button>
+	<button type="button" class="pure-button pure-button-primary loginButton " >总管登录</button>
 </div>

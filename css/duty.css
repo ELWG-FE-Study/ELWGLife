@@ -1,17 +1,3 @@
-body
-{
-	margin:0 auto;
-	padding:0;
-}
-
-#centerArea
-{
-	position:relative;
-	width:70%;
-	height:100%;
-	padding-bottom:50px;
-}
-
 .lateRecord
 {
 	float:right;
@@ -23,18 +9,10 @@ body
 	float:right;
 }
 
-.dutyContent
-{
-	margin-top:50px;
-	width:100%;
-	height:200px;
-	border:2px solid grey;
-}
-
 .login
 {
 	position:relative;
-	margin-top:50px;
+	margin-top:40px;
 	left:40%;
 }
 
@@ -45,14 +23,11 @@ body
 	border-radius:20px;
 }
 
-table
+.duty-table
 {
 	width:100%;
 	text-align:center;
 }
-
-#leftArea,#rightArea
-{
-	width:15%;
-	height:100%;
+.dutyContent{
+	border: 1px solid black;
 }

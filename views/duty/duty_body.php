@@ -1,6 +1,8 @@
-<p >值日表<button calss="pure-button" id="nextweekButton">下一周</button>
+<p >值日表
+	<span><button calss="pure-button pure-button-primary" id="nextweekButton">
+		下一周</button></span>
 </p>
-<table class="pure-table pure-table-horizontal">			
+<table class="pure-table pure-table-horizontal duty-table">			
 	<thead>
 		<tr>
 			<th>星期一</th>
