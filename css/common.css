@@ -1,0 +1,98 @@
+/* 全局与覆写purecss库*/
+html, button, input, select, textarea {
+    font-family: Arial, '微软雅黑', Helvetica, sans-serif;
+}
+
+.pure-menu li a, .pure-menu .pure-menu-heading {
+    color: #fff;
+    padding: 10px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.pure-menu .pure-menu-selected a {
+    color: #fff;
+    background-color: #2980b9;
+}
+
+.pure-menu li a:hover, .pure-menu li a:focus {
+    background-color: #2980b9;
+}
+
+.pure-table td, .pure-table th {
+    padding: 8px 12px;
+}
+
+.pure-form-aligned .pure-control-group label {
+    width: 4em;
+}
+
+/* 公用类 */
+
+.container-center {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.form-fields {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 布局 */
+
+html, body, #wrapper {
+    height: 100%;    
+}
+
+body>#wrapper {
+    height: auto;
+    min-height: 100%;
+}
+
+#main-container {
+    padding-bottom: 90px;
+}
+
+#header {
+    font-size: 1.2em;
+    background-color: #2d313d;
+    margin-bottom: 5px;
+}
+
+#footer {
+    position: relative;
+    margin-top: -90px;
+    height: 90px;
+    clear: both;
+
+    /*padding: 5px 0;*/
+    color: white;
+    background-color: #2d313d;
+}
+
+.footer-container {
+    padding: 10px 0;    
+}
+
+#footer p {
+    text-align: center;
+    margin: 10px 0;
+}
