@@ -1,5 +1,5 @@
 <?php
-
+require(ABS_PATH . 'models/manager_model.php');
 class Manager_Controller
 {
 	
@@ -28,5 +28,5 @@ class Manager_Controller
 	function undone(){
 		$this->manage_model->undone();
 	}
+
 }
-?>
