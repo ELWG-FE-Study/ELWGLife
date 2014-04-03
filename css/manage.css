@@ -1,0 +1,59 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#demo{
+    display: inline;
+    color: red;
+}
+.manage_container{
+    height: 30%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.later{
+    text-align: center;
+    border: black 1px solid;
+    margin-right: 50%;
+    width: 50%;
+    float:left;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.check{
+    text-align: center;
+    border: black 1px solid;
+    width: 49%;
+    height: 200px;
+    float: right;
+
+}
+
+#timenow{
+    font-size: 20px;
+    font-family: "楷体";
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+}
+.button-check {
+    border-radius: 5px;
+}
+ 
+#punish{
+    border-radius: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border:1px black solid;
+    width: 200px;
+    height: 35px;
+}
