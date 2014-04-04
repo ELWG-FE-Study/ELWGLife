@@ -8,7 +8,7 @@
 		<li>拖地</li>
 	</ol>
 </div>
-<div class="pure-form"id="loginCheck">
+<div class="pure-form" id="loginCheck">
 	<input type="text" name="username" placeholder="用户名" />
 	<br/>
 	<br/>

@@ -21,7 +21,6 @@
 			</div>
 			<?php include(ABS_PATH . 'views/duty/duty_body.php'); ?>
 			<?php include(ABS_PATH . 'views/duty/duty_footer.php'); ?>
-	
 		</div>
 </div>
 </div>

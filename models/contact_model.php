@@ -84,4 +84,3 @@ class Contact_Model {
         return $backArray;
     }
 }
-?>       

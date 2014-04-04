@@ -7,17 +7,12 @@ $(document).ready(function() {
     $('#nextweekButton').click(function() {
         $('.nextweek').toggle();
     });
-    $('.loginButton').click(function() {
-        $login = $('.login');
-        $.post('../page/duty_controller.php', {
+
+    $('.loginButton').click(function() {  //待解决，发送验证数据无法成功
+        $login = $("#loginCheck");
+        $.post('../page/loginCheck.php', {
                 username: $login.find('input[name=username]').val(),
                 password: $login.find('input[name=password]').val()
-            },
-            function() {
-                
-               /*if (data === 'ok') //登陆成功返回data，并且data=ok
-                    $.post("../cookies.php?action=ok");
-                else return;*/
             }); 
     });
 });

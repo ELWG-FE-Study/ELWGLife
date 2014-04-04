@@ -1,9 +1,7 @@
 <?php
 
 require(ABS_PATH.'models/duty_model.php');//引入duty_model文件
-//类名Duty_Controller
-
-class Duty_Controller {
+class Duty_Controller {//类名Duty_Controller
     function __construct() {
         $this->duty_model = new Duty_Model(); //新建一个duty_model中的Duty_Model类
         
@@ -48,21 +46,13 @@ class Duty_Controller {
                 $j++;
             }
         }
-        require (ABS_PATH . ('views/duty_view.php'));
+        require (ABS_PATH . 'views/duty_view.php');
+        
     }
-    function login() { //管理员输入正确的用户名和密码则正确登录，并保存cookie
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $info = array();
-        $info = $this->duty_model->get_login_data();
-        if ($username == $info[0] && $password == $info[1]) {
-            //return 'ok';
-            //登陆页面
-            //setcookie("name","loged",time()+24*3600);
-            
+    function login() {                  //管理员输入正确的用户名和密码则正确登录，并保存cookie
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        $charge = $this->duty_model->get_login_data($username,$password);
         }
     }
 }
-
-
-
