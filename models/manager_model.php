@@ -19,7 +19,8 @@ class Manager_Model {
 		/*判断从controller层得到的迟到人名$later，若有人迟到，则把相应名字插入到数据库中的later表中*/
 		 $length = count($later);
 		 for ($i=0; $i < $length ; $i++) { 
-			$result = mysql_query("INSERT INTO later (member_name) VALUES ($later[$i]) ");
+		 	$sql = "INSERT INTO later (member_name) VALUES ('$later[$i]') ";
+			$result = mysql_query($sql);
 		 	// $sql1 = "UPDATE later SET label = '1' WHERE member_name = '$later_array[i]' ";
 		 }
 			if ($result) {
