@@ -1,36 +1,29 @@
 .lateRecord
 {
 	float:right;
-	border-radius:20px;
 }
 
 #nextweekButton
 {
 	float:right;
-	border-radius:20px;
 }
 
 #loginCheck
 {
-	margin:0 auto;
-	width:150px;
-}
-
-.loginButton
-{
-	position:relative;
-	left:50px;
-	border-radius:20px;
-	width:100px;
+	margin:20px auto;
+	width:240px;
+	text-align: center;
 }
 
 .duty-table
 {
 	width:100%;
 	text-align:center;
+	margin-bottom: 20px;
 }
 .dutyContent{
 	border: 1px solid black;
 	margin-bottom: 40px;
+	padding-left: 50px;
 }
 
