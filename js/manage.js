@@ -36,24 +36,23 @@ function displayLater(){
 	document.getElementById("demo").innerHTML = $(".check_input").val();
 }
 
+
+
+// $(document).ready(function(){
+// 	$("#punish").click(function(){
+// 		var $container = $('.manage-container');
+// 		$.post('../page/ajax/update_later.php',{
+// 		name: $container.find('input[name=later]').val(),
+// 		});
+// 	});
+// });
 $(document).ready(function(){
-	$("#punish").click(function(){
-		var $container = $('.manage-container');
-		$.post('../page/ajax/update_later.php',{
-		name: $container.find('input[name=later]').val(),
-		});
-	});
-    // $(".loginButton").click(function(){
-    // 	$(".login").hide("slow")
-    // });
-    // $(".loginButton").click(function(){
-    // 	$(".manage_container").fadeIn("slow");
-    // });
-    // $(".loginButton").click(function(){
-    // 	var $container = $('.login');
-    // 	$.post('../page/ajax/login.php',{
-    // 		username:$container.find('input[name=username]').val(),
-    // 		password:$container.find('input[name=passwrod]').val(),
-    // 	})
-    // })
+    $('#punish').click(function(){
+        var $container = $('.later');
+        $.post('../page/ajax/update_later.php',{
+            name:$container.find('input[name=later]').val()
+        },function(data){
+            console.log(data);
+        });
+    });
 });

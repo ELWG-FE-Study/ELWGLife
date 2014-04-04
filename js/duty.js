@@ -8,14 +8,34 @@ $(document).ready(function() {
         $('.nextweek').toggle();
     });
 
-    $('.loginButton').click(function() {  //待解决，发送验证数据无法成功
-        $login = $("#loginCheck");
-        $.post('../page/loginCheck.php', {
-                username: $login.find('input[name=username]').val(),
-                password: $login.find('input[name=password]').val()
-            }); 
+    $('.loginButton').click(function() {
+        $login = $('.login');
+        $.post('../page/ajax/login.php', {
+            username: $login.find('input[name=username]').val(),
+            password: $login.find('input[name=password]').val()
+        }, function(response) {
+            console.log(response);
+            if (response === 'ok') {
+                $(".login").hide("slow");
+                $(".manage_container").fadeIn("slow");
+            };
+        }); 
     });
 });
+
+//     $('.loginButton').click(function() {
+//         $login = $('.login');
+//         $.post('../page/ajax/login.php', {
+//             username: $login.find('input[name=username]').val(),
+//             password: $login.find('input[name=password]').val(),
+//         }, function(response) {
+//             console.log(response);
+//             if (response === 'ok') {
+//                 $(".login").hide("slow");
+//                 $(".manage_container").fadeIn("slow");
+//         }); 
+//     });
+// };
    
 function getTime(){   
     var time=new Date();

@@ -1,6 +1,21 @@
+body
+{
+	margin:0 auto;
+	padding:0;
+}
+
+#centerArea
+{
+	position:relative;
+	width:70%;
+	height:100%;
+	padding-bottom:50px;
+}
+
 .lateRecord
 {
 	float:right;
+	border-radius:20px;
 }
 
 #nextweekButton
@@ -8,22 +23,41 @@
 	float:right;
 }
 
-#loginCheck
+.dutyContent
 {
-	margin:20px auto;
-	width:240px;
-	text-align: center;
+	margin-top:20px;
+	width:100%;
+	height:200px;
+	border:2px solid gray;
+	margin-bottom: 10px;
 }
 
-.duty-table
+.login
+{
+	position:relative;
+	margin-top:20px;
+	left:40%;
+}
+
+.loginButton
+{
+	position:absolute;
+	left:5%;
+	border-radius:20px;
+}
+
+table
 {
 	width:100%;
 	text-align:center;
-	margin-bottom: 20px;
-}
-.dutyContent{
-	border: 1px solid black;
-	margin-bottom: 40px;
-	padding-left: 50px;
 }
 
+#leftArea,#rightArea
+{
+	width:15%;
+	height:100%;
+}
+
+thead{
+	text-align: center;
+}

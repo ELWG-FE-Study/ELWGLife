@@ -1,9 +1,8 @@
-<p >值日表
-	<button type="button" class=" pure-button  pure-button-primary" id="nextweekButton">下一周</button>
+<p >值日表<button calss="pure-button pure-button-primary" id="nextweekButton">下一周</button>
 </p>
-<table class="pure-table pure-table-odd pure-table-horizontal duty-table">			
+<table class="pure-table pure-table-odd pure-table-horizontal">			
 	<thead>
-		<tr>
+		<tr align="center">
 			<th>星期一</th>
 			<th>星期二</th>
 			<th>星期三</th>

@@ -1,5 +1,7 @@
 <meta charset="utf-8">
 <title>ELWG Life</title>
+<script src="../js/jquery-1.11.0.js"></script>
+<script src="../js/jquery.modal.js"></script>
 <link rel="stylesheet" href="../css/pure-min.css">
 <link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" type="text/css" href="../css/manage.css">
@@ -11,8 +13,7 @@
 } ?>
 
 <script src="../js/manage.js"></script>
-<script src="../js/jquery-1.11.0.js"></script>
-<script src="../js/jquery.modal.js"></script>
+
 <script src="../js/contact.js"></script>
 <script src="../js/duty.js"></script>
 

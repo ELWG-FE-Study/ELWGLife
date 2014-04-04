@@ -18,6 +18,5 @@
 </div>
 
 <div id="timenow"></div>
-
 </div>
 </body>
