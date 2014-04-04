@@ -56,3 +56,4 @@ class Duty_Controller {//类名Duty_Controller
         }
     }
 }
+

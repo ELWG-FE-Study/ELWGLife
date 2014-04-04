@@ -60,4 +60,3 @@ class Duty_Model {
                 return 0;
         
     }
-}
