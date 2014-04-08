@@ -15,7 +15,7 @@ class Manager_Model {
 			{
 				return 0;
 			}
-		mysql_close($con);
+		// mysql_close($con);
 	} 
 
 	function change_duty_data() {
@@ -23,7 +23,7 @@ class Manager_Model {
 		$result = mysql_query("UPDATE contacts SET duty_or_not = 'no' 
 				WHERE member_name = '$name' ");
 
-		mysql_close($con);
+		// mysql_close($con);
 
 		if (!$result) {
 			return 'Invalid query: ' . mysql_error() . "\n";
@@ -34,7 +34,7 @@ class Manager_Model {
 	}
 	function done(){ //使用done进行测试
 		$flag = mysql_query("UPDATE later SET label = '0' WHERE label = '1' LIMIT 1");
-		mysql_close($con);
+		// mysql_close($con);
 
 	}
 }

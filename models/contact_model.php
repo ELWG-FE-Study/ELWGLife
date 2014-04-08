@@ -1,5 +1,5 @@
 <?php
-require (ABS_PATH . ('views/sqlConnect.php'));
+require (ABS_PATH . 'views/sqlConnect.php');
 class Contact_Model {
    
     function __construct() {
@@ -32,7 +32,7 @@ class Contact_Model {
             $result = mysql_query("INSERT INTO contacts (member_name,sex,grade,phone,qq,email)
             VALUES ('$name','$sex','$grade','$tel','$qq','$email')");
         }      
-        mysql_close($con);
+        // mysql_close($con);
 
 
         if (!$flag) {
@@ -52,13 +52,13 @@ class Contact_Model {
             die($message);
         }
         $backArrayAll = mysql_fetch_array($result,MYSQL_ASSOC);            
-        mysql_close($con);
-        $backArray = array('member_name' => $backArrayAll[member_name],
-                            'sex' => $backArrayAll[sex],
-                            'grade' => $backArrayAll[grade],
-                            'phone' => $backArrayAll[phone],
-                            'qq' => $backArrayAll[qq],
-                            'email' =>$backArrayAll[email],
+        // mysql_close($con);
+        $backArray = array('member_name' => $backArrayAll['member_name'],
+                            'sex' => $backArrayAll['sex'],
+                            'grade' => $backArrayAll['grade'],
+                            'phone' => $backArrayAll['phone'],
+                            'qq' => $backArrayAll['qq'],
+                            'email' =>$backArrayAll['email'],
                             );
         return $backArray;
     }

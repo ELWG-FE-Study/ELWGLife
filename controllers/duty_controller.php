@@ -68,7 +68,7 @@ class Duty_Controller {
                 $k++;
             }
         }
-       // var_dump($contactdataAll[$m][0]);
+       // var_dump($result);
         require (ABS_PATH . ('views/duty_view.php'));
     }
 
