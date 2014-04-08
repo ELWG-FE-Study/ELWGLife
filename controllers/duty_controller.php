@@ -9,7 +9,12 @@ class Duty_Controller {
     }
     function index() { //从mode l层获取数据
         $laterdata = $this->duty_model->get_duty_laterdata(); //返回later表数据中待值日的
-        $contactdata = $this->duty_model->get_duty_contactdata(); //返回contact表中常规值日
+        $contactdata = $this->duty_model->get_duty_contactdata('no'); //返回contact表中常规值日
+        $contactdataAll=$this->duty_model->get_duty_contactdata('all');
+        $laterdataNum=count($laterdata);
+        $contactdataNum=count($contactdata);
+        $contactNum=count($contactdataAll);//contact表中清洁总人数
+        $cleanerNum=$laterdataNum+$contactdataNum;
         $weekday = array(
             "Monday" => 1,
             "Tuesday" => 2,
@@ -21,32 +26,49 @@ class Duty_Controller {
         );
         $time = time();
         $day = date("l", $time);
-        $contactdataNum = count($contactdata);
+        if(!count($laterdata)){         //解决later表为空时的冲突
+            $this->duty_model->confictSolve($contactdata[0][0]);
+        }
         $result = array();
-        $data[] = array();
-        $data = array_merge($laterdata, $contactdata);
         $weekMarker = $weekday[$day];
-        $dataCount = count($data);
-        if ($dataCount < 14 - $weekMarker) {
-            for ($k = 0, $j = 0, $i = 0; $i <= 13; $i++) {
-                if ($i < $weekMarker - 1) array_push($result, '');
-                else if ($j < $dataCount) {
-                    array_push($result, $data[$j][0]);
-                    $j++;
-                } else {
-                    if ($k < $contactdataNum) {
-                        array_push($result, $contactdata[$k][0]);
-                        $k++;
-                    } else $k = 0;
+        if ($cleanerNum <= 14 - $weekMarker) {
+            for ($m=0,$k = 0, $j = 0, $i = 0; $i <= 13; $i++) {
+                if ($i < $weekMarker - 1) 
+                    array_push($result, '');
+                else if ($j < $cleanerNum) {
+                        if($j<$laterdataNum)
+                        {
+                            array_push($result, $laterdata[$j][0]);
+                            $j++;
+                        }
+                        else if($k<$contactdataNum){
+                            array_push($result, $contactdata[$k][0]);
+                            $k++;
+                            $j++;
+                        }
                 }
-            }
-        } else for ($j = 0, $i = 0; $i <= 13; $i++) {
-            if ($i < $weekMarker - 1) array_push($result, '');
-            else {
-                array_push($result, $data[$j][0]);
-                $j++;
+                   
+                else {
+                    if($m >= $contactNum){
+                        $m = 0;
+                    }
+                        array_push($result, $contactdataAll[$m][0]);
+                        $m++;
+                } 
             }
         }
+        else for ($k=0,$j = 0, $i = 0; $i <= 13; $i++) {
+            if ($i < $weekMarker - 1) array_push($result, '');
+            else if($j<$laterdataNum){
+                array_push($result, $laterdata[$j][0]);
+                $j++;
+            }
+            else{
+                array_push($result, $laterdata[$k][0]);
+                $k++;
+            }
+        }
+       // var_dump($contactdataAll[$m][0]);
         require (ABS_PATH . ('views/duty_view.php'));
     }
 
