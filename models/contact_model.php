@@ -23,7 +23,7 @@ class Contact_Model {
 
     function insert_contact_data($name, $sex, $grade, $tel, $qq, $email){
         $sql = "SELECT * FROM contacts WHERE member_name = '$name' ";
-        $flag = mysql_query($sql , $con); 
+        $flag = mysql_query($sql); 
 
         if ($row = mysql_fetch_assoc($flag)) {
             $result = mysql_query(" UPDATE contacts SET sex='$sex',grade='$grade',phone='$tel',
