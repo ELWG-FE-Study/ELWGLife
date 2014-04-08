@@ -46,6 +46,7 @@ $(document).ready(function() {
             for (key in data) {
                 $row.append($('<td>').html(data[key]));
             }
+            $('.searchResult tbody').empty();
             $('.searchResult tbody').append($row);
         }, 'json');
         //var a = $container.find('input[name=key]').val();
