@@ -1,4 +1,5 @@
 <?php
+require (ABS_PATH . ('views/sqlConnect.php'));
 class Contact_Model {
    
     function __construct() {
@@ -6,17 +7,6 @@ class Contact_Model {
     }
 
     function get_contact_data() {
-        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
-        if (!$con) {
-            die('Could not connect: ' . mysql_error());
-        }
-        
-        $db_selected = mysql_select_db('db_elwg_life', $con);
-        if (!$db_selected) {
-            die('Could not connect: ' . mysql_error());
-        }
-
-        mysql_query("set names utf8;");
         $sql = "SELECT * FROM contacts";
         $result = mysql_query($sql);
         if (!$result) {
@@ -27,28 +17,11 @@ class Contact_Model {
             
             $backArray[] = $row;
         }
-        mysql_close($con);
+        //mysql_close($con);
         return $backArray;
     }
 
     function insert_contact_data($name, $sex, $grade, $tel, $qq, $email){
-        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
-        
-        if(!$name)
-        {
-            mysql_close($con);
-            return;
-        }
-
-        if (!$con) {
-            die('Could not connect: ' . mysql_error());
-        }
-        
-        $db_selected = mysql_select_db('db_elwg_life', $con);
-        if (!$db_selected) {
-            die('Could not connect: ' . mysql_error());
-        }
-        mysql_query("set names utf8;");
         $sql = "SELECT * FROM contacts WHERE member_name = '$name' ";
         $flag = mysql_query($sql , $con); 
 
@@ -71,17 +44,6 @@ class Contact_Model {
 }
 
     function search_contact_data($key) {
-        $con = mysql_connect("115.156.216.95" , "lidasong" , "123");
-        if (!$con) {
-            die('Could not connect: ' . mysql_error());
-        }
-        
-        $db_selected = mysql_select_db('db_elwg_life', $con);
-        if (!$db_selected) {
-            die('Could not connect: ' . mysql_error());
-        }
-
-        mysql_query("set names utf8;");
         $sql = "SELECT * FROM contacts WHERE member_name LIKE '%$key%' ";
         $result = mysql_query($sql);
         $backArrayAll[] = array();//返回的数组
