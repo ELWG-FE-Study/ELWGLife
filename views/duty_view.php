@@ -18,7 +18,7 @@
                     <p >时间：<span id="headertime"></span><!--pure-button-disabled-->
                     <button type="button" class=" pure-button  pure-button-primary lateRecord">迟到记录</button>
                     </p>                
-                    <p id="weekday"></p>
+                    <p id="weekday">11</p>
                 </div>
                 <?php include('duty/duty_body.php');?>
 				<?php include('duty/duty_footer.php');?>

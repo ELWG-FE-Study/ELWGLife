@@ -14,7 +14,7 @@ class Manager_Controller
         echo $later;
     }
 
-    function undone(){
-        $this->manager_model->undone();
+    function done(){
+        $this->manager_model->done();
     }
 }

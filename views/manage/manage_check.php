@@ -12,8 +12,10 @@
 
 <div class="check">
     <br>
-    <p><button class="button-check pure-button pure-button-primary">值日未完成！</button></p>
-    <br><br>
+    <p><button class="button-check-undo pure-button pure-button-primary">值日未完成！</button>
+    <button class="button-check-do pure-button pure-button-primary">值日已完成！</button>
+    </p>
+    <br>
     <p>如果同学今天没值日，就点击一下~</p>
 </div>
 
