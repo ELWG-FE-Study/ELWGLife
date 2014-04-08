@@ -1,5 +1,5 @@
 var weekArray=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
-
+var H;
 $(document).ready(function() {
     getDay();     
     getTime();
@@ -22,20 +22,6 @@ $(document).ready(function() {
         }); 
     });
 });
-
-//     $('.loginButton').click(function() {
-//         $login = $('.login');
-//         $.post('../page/ajax/login.php', {
-//             username: $login.find('input[name=username]').val(),
-//             password: $login.find('input[name=password]').val(),
-//         }, function(response) {
-//             console.log(response);
-//             if (response === 'ok') {
-//                 $(".login").hide("slow");
-//                 $(".manage_container").fadeIn("slow");
-//         }); 
-//     });
-// };
    
 function getTime(){   
     var time=new Date();

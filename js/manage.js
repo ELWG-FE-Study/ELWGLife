@@ -54,5 +54,15 @@ $(document).ready(function(){
         },function(data){
             console.log(data);
         });
+        alert('迟到人员已插入！');
+    });
+
+    $('.button-check-do').click(function(){
+        $.post('../page/ajax/do.php');
+        alert('今日值日完成！');
+    });
+
+    $('.button-check-undo').click(function(){
+        alert('明天还是他值日！');
     });
 });
