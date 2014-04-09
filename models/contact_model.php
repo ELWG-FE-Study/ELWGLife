@@ -46,26 +46,15 @@ class Contact_Model {
     function search_contact_data($key) {
         $sql = "SELECT * FROM contacts WHERE member_name LIKE '%$key%' ";
         $result = mysql_query($sql);
-        // $backArrayAll[] = array();//返回的数组
+        $backArrayAll[] = array();//返回的数组
         if (!$result) {
             $message = 'Invalid query: ' . mysql_error() . "\n";
             die($message);
         }
-        while($backArrayAll = mysql_fetch_array($result)){
-            $contacts[] = $backArrayAll;
-        }
-        // mysql_close($con);
-
-        // $backArray = array('member_name' => $backArrayAll['member_name'],
-        //                     'sex' => $backArrayAll['sex'],
-        //                     'grade' => $backArrayAll['grade'],
-        //                     'phone' => $backArrayAll['phone'],
-        //                     'qq' => $backArrayAll['qq'],
-        //                     'email' =>$backArrayAll['email'],
-        //                     );
-        // return $backArray;
-        // var_dump($contacts);
-        for ($i=0; $i < sizeof($contacts); $i++) { 
+         while ($row=mysql_fetch_array($result)){
+            $contacts[] = $row;
+         }
+            for ($i=0; $i < sizeof($contacts); $i++) { 
             $backArray[$i] = array('0' => $contacts[$i]['member_name'],
                                     '1' => $contacts[$i]['sex'],
                                     '2' => $contacts[$i]['grade'],
@@ -73,11 +62,18 @@ class Contact_Model {
                                     '4' => $contacts[$i]['qq'],
                                     '5' =>$contacts[$i]['email'],
                                     );
-            // var_dump($backArray[$i];);
-
         }
-        // var_dump($backArray);
-        // return $backArray;
+         
+                     
+        // mysql_close($con);
+        //$backArrayAll=mysql_fetch_array($result);
+        // $backArray = array('member_name' => $backArrayAll['member_name'],
+        //                     'sex' => $backArrayAll['sex'],
+        //                     'grade' => $backArrayAll['grade'],
+        //                     'phone' => $backArrayAll['phone'],
+        //                     'qq' => $backArrayAll['qq'],
+        //                     'email' =>$backArrayAll['email'],
+        //                     );
         return $backArray;
     }
 }
