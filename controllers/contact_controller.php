@@ -58,10 +58,8 @@ class Contact_Controller
         //根据keywords进行搜索
 
         $result_search = $this->contact_model->search_contact_data($key);
-        // for ($i=0; $i < sizeof($result_search); $i++) { 
-        //     echo ;
-        // }
         echo json_encode($result_search);
+        // var_dump($result_search);
         return $result_search;
 
     }

@@ -14,8 +14,8 @@ class Duty_Model {
         if($param==='no'){
             $query = mysql_query("SELECT member_name FROM contacts
             WHERE on_duty=1 && duty_or_not='no' ");
-            while ($contacts = mysql_fetch_array($query)) {
-            $duty_result[] = $contacts;
+             while ($contacts = mysql_fetch_array($query)) {
+                $duty_result[] = $contacts;
             }
             if (count($duty_result)==0) {
                 $query1 = mysql_query("UPDATE contacts SET duty_or_not='no' WHERE on_duty = '1' " );                
