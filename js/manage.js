@@ -59,10 +59,14 @@ $(document).ready(function(){
 
     $('.button-check-do').click(function(){
         $.post('../page/ajax/do.php');
+        $.post('../page/mail.php');
         alert('今日值日完成！');
     });
 
     $('.button-check-undo').click(function(){
+        $.post('../page/mail.php');
         alert('明天还是他值日！');
     });
 });
+// 
+            

@@ -41,7 +41,7 @@ $(document).ready(function() {
             key: $container.find('input[name=key]').val(),
         }, function(data) {
             console.log(data);
-            $('.searchResult tbody').empty();
+              $('.searchResult tbody').empty();
             for (var i = 0; i < data.length; i++) {
                 var $row = $('<tr>'),
                 key;
@@ -49,13 +49,9 @@ $(document).ready(function() {
                 $row.append($('<td>').html(data[i][key]));
             }
             $('.searchResult tbody').append($row);
-            };
-            
-            // $('.searchResult tbody').empty();
-            
+            };            
         }, 'json');
-        //var a = $container.find('input[name=key]').val();
-        //alert(a);
+
     });
 });
 
