@@ -8,9 +8,7 @@ class Duty_Model extends CI_Model {
         if($param==='no'){
             $sql="SELECT member_name FROM contacts WHERE on_duty=1 && duty_or_not='no' ";
             $query = $this->db->query($sql);
-            while ($row = $query->result_array()) {
-                $duty_result[] = $row;
-            }
+            $duty_result = $query->result_array();
             if (count($duty_result)==0) {
                 $sql="UPDATE contacts SET duty_or_not='no' WHERE on_duty = '1' ";
                 $query = $this->db->query($sql);                
@@ -20,9 +18,7 @@ class Duty_Model extends CI_Model {
             $sql="SELECT member_name FROM contacts
             WHERE on_duty=1 ";
             $query = $this->db->query($sql);
-            while ($row = $query->result_array()) {
-            $duty_result[] = $row;
-            }
+            $duty_result = $query->result_array();
         }
         //mysql_close($con);
         return $duty_result;
@@ -31,9 +27,8 @@ class Duty_Model extends CI_Model {
         $sql="SELECT member_name FROM later WHERE label='1' ";
         $query = $this->db->query($sql);
         //值日未完成按钮触发label变化
-        while ($row = $query->result_array()) {
-            $duty_result[] = $row;
-        }
+        $duty_result = $query->result_array();
+            
         //mysql_close($con);
         return $duty_result;
     }
