@@ -6,7 +6,7 @@ class Contact extends CI_Controller{
 	}
 	public function index(){
 		$data['contact'] = $this->contact_model->get_contact_data();
-		$this->load->view('contact_view',$data);
+		$this->load->view('Itec_view/contact_view',$data);
 	}
 
 	public function insert(){

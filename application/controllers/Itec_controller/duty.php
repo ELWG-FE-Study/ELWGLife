@@ -68,7 +68,7 @@ class Duty extends CI_Controller{
 		}
 
 		$data['result'] = $result;
-		$this->load->view('duty_view',$data);
+		$this->load->view('Itec_view/duty_view',$data);
 	}
 
 	public function login(){
