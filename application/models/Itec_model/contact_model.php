@@ -2,7 +2,6 @@
 // require_once('../base.php');
 // require (ABS_PATH . 'views/sqlConnect.php');
 class Contact_Model extends CI_Model {
-   
     function __construct() {
        parent::__construct();
        $this->load->database();
@@ -11,10 +10,7 @@ class Contact_Model extends CI_Model {
     function get_contact_data() {
         $sql = "SELECT * FROM contacts";
         $query = $this->db->query($sql);
-        while ($row = $query->result_array()) {
-            
-            $backArray[] = $row;
-        }
+        $backArray=$query->result_array();
         return $backArray;
     }
 
